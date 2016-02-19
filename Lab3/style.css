@@ -1,0 +1,33 @@
+/*
+Lab 3 Stylesheet
+ */
+
+/* Main ID Elements
+ */
+
+#BlogPostTitle
+{
+    text-color:#ff0000;
+
+}
+
+#PageHeader
+{
+    background-color: #EEEEEE;
+}
+
+#SiteNavigation ul
+{
+    height: auto;
+    padding: 8px 0px;
+    margin: 15px;
+    padding: 20px;
+}
+#SiteNavigation li {
+    list-style: none;
+    display:inline;
+    background-color:#3342FF;
+}
+
+
+
