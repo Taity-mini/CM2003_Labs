@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+<script>
+    //grab the URL in the location bar
+    var searchString = document.location.search;
+
+    //strip off the leader '?'
+    searchString = searchString.subString(1);
+
+    //split string of arguments into name=value pairs
+    var nvPairs = searchString.split("&");
+
+    //iterate through name=values pairs
+    //split into separate name and value
+    //print to the browser console
+
+    for(i = 0; i < nvPairs.length;i++)
+    {
+        var nvpair = nvPairs[i].split("=");
+        var name = nvpair[0];
+        var value = nvpair[1];
+        console.log("argument name=" +name+" and value =" + value);
+    }
+</script>
+</head>
+<body id="test" onload="">
+ <a href="urltest.html?query=cat&safesearch=strict">Link with parameter</a>
+</body>
+</html>
